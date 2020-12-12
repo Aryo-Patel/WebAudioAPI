@@ -29,4 +29,8 @@ oscillator.stop(audioContext.currentTime + 5);
 //message played when it ends
 oscillator.onended = () => {
     console.log('finished playing');
+
+    oscillator = audioContext.createOscillator();
+    oscillator.connect(audioContext.destination);
+    //oscillator.start(audioContext.currentTime)
 }
