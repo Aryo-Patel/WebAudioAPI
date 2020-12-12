@@ -4,7 +4,22 @@
         <title>Web Audio API</title>
     </head>
     <body>
-
+        <div>
+            <h1>Web Audio API Playground</h1>
+            <button onclick = "play()">Start/Stop</button>
+        </div>
+        <br>
+        <div>
+            <input onchange = "changeType()" type ="radio" name = "waveform" checked value = "sine"> Sin
+            <input onchange = "changeType()" type ="radio" name = "waveform" value = "sawtooth"> Sawtooth
+            <input onchange = "changeType()" type ="radio" name = "waveform" value = "triangle"> Triangle
+            <input onchange = "changeType()" type ="radio" name = "waveform" value = "square"> Square
+            <br>
+        </div>
+        <br>
+        <div>
+            <input id = "freqslider" type= "range" onchange="changeFreq()" name = ""> 
+        </div>
     </body>
-    <script src = "web-audio-2.js"></script>
+    <script src = "web-audio-3.js"></script>
 </html>
